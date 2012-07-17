@@ -34,7 +34,7 @@
 				methods.log('Initializing');
 				
 				// Get initial character count in textbox
-				el.bind('keyup.limit', methods.update);
+				el.bind('keyup.limit paste.limit', methods.update);
 				
 				// CountElement needs to be an element wrapped in a jquery object
 				if(typeof config.counter === 'function')
