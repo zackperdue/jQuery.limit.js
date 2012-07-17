@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.limit.js"></script>
+</head>
+<body>
+	
+	<textarea maxlength="2000"></textarea>
+	
+	<script type="text/javascript">		
+		$(function(){
+			$('[maxlength]').limit({
+				debug: true
+			});
+		});
+	</script>
+</body>
+</html>
