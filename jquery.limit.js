@@ -1,3 +1,16 @@
+/**
+ * @author Zack Perdue / Ziggidy Creative 
+ * http://zackperdue.com
+ * http://ziggidycreative.com
+ *
+ * Version 0.1
+ * Copyright (c) 2011 Ziggidy Creative
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
 (function($){
 		
 	$.fn.limit = function(options){
