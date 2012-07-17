@@ -4,7 +4,7 @@
 		
 		var config = {
 			max: 2000,
-			debug: true,
+			debug: false,
 			counter: null,
 			elementSelector: 'limit-count',
 			updateView: null,
@@ -93,7 +93,14 @@
 		return this.each(function(i){
 
 			el = $(this);
-										
+			limit = parseInt(el.data('limit'));
+			
+			if(limit > 0)
+			{
+				config.max = limit;
+			}
+			
+			methods.log(config);							
 			methods.init();
 
 		});

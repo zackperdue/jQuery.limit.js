@@ -8,12 +8,12 @@
 </head>
 <body>
 	
-	<textarea maxlength="2000"></textarea>
+	<textarea data-limit="300"></textarea>
 	
 	<script type="text/javascript">		
 		$(function(){
-			$('[maxlength]').limit({
-				debug: true
+			$('textarea').limit({
+				debug: false
 			});
 		});
 	</script>
